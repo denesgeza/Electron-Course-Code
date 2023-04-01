@@ -21,14 +21,18 @@
   "devDependencies": {
     "electron": "^23.2.1",
     "electron-builder": "^23.6.0",
+    "electron-notarize": "^1.2.2",
     "nodemon": "^2.0.22"
   },
   "dependencies": {
+    "electron-log": "^4.4.8",
+    "electron-updater": "^5.3.0",
     "electron-window-state": "^5.0.3"
   },
   "build": {
     "appId": "com.geza.readit",
     "copyright": "Copyright Denes Geza",
+    "afterSign": "build/notarize.js",
     "publish": {
       "provider": "github"
     },
@@ -41,7 +45,7 @@
       "certificateFile": "private/geza.p12",
       "certificatePassword": "",
       "verifyUpdateCodeSignature": false
-    }, 
+    },
     "linux": {
       "category": "Utility"
     }
