@@ -1,0 +1,44 @@
+{
+  "name": "ReadIt",
+  "version": "1.0.1",
+  "description": "Master Electron Project",
+  "main": "main.js",
+  "scripts": {
+    "electron": "electron .",
+    "watch": "nodemon --exec electron .",
+    "reset": "git reset --hard",
+    "build": "electron-builder"
+  },
+  "homepage": "https://www.denesgeza.com",
+  "keywords": [
+    "Electron",
+    "Site reader"
+  ],
+  "author": "Geza Denes",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^23.2.1",
+    "electron-builder": "^23.6.0",
+    "nodemon": "^2.0.22"
+  },
+  "dependencies": {
+    "electron-window-state": "^5.0.3"
+  },
+  "build": {
+    "appId": "com.geza.readit",
+    "copyright": "Copyright Denes Geza",
+    "mac": {
+      "category": "public.app-category.developer-tools",
+      "target": "dmg"
+    },
+    "win": {
+      "target": "zip",
+      "certificateFile": "private/geza.p12",
+      "certificatePassword": "",
+      "verifyUpdateCodeSignature": false
+    }, 
+    "linux": {
+      "category": "Utility"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+node_modules
+node_modules/
+node_modules/*
+private/
+.DS_Store
+.idea/.gitignore
+.idea/master-electron-project.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/prettier.xml
+.idea/codeStyles/codeStyleConfig.xml
+.idea/copyright/profiles_settings.xml
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/inspectionProfiles/Project_Default.xml
+
+dist/
