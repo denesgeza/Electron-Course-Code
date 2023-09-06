@@ -19,7 +19,7 @@
   "author": "Geza Denes",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^23.2.1",
+    "electron": "^23.3.13",
     "electron-builder": "^23.6.0",
     "electron-notarize": "^1.2.2",
     "nodemon": "^2.0.22"
